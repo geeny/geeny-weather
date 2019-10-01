@@ -12,18 +12,18 @@
  *  D6 --> 100 ohm resistor --> blue pin RGB LED
  *  D7 --> 100 ohm resistor --> green pin RGB LED
  *  D8 --> 100 ohm resistor --> red pin RGB LED
- *  3V3 --> VCC OLED LV
+ *  3V3 --> VCC OLED, --> level converter LV
  *  5V --> level converter HV
- *  G --> GND OLED, --> cathode RGB LED, --> level converter GND
+ *  G --> GND OLED, --> cathode RGB LED,
+ *    --> level converter GND (both LV and HV)
  * ----------------------------------------------------------------------
  *  Andreas Thol, B2P Product Requirements, DUS 
- *  +49 211|177 448-2078 (fix|cell)
- *  andreas.thol@telefonica.com
  *  25.09.2019
  * ======================================================================
  *  about this file:
  *  - prototype for dust sensor using PPD42NS sensor
- *  - "as wished by Alfons Lösing" ;-)
+ *  - dust concentration calculation borrowed from:
+ *    http://arduinoairpollution.altervista.org/progetto/
  * ======================================================================
  */
 
